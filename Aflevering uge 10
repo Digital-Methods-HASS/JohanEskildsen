@@ -1,0 +1,38 @@
+#Question 1
+
+#To find the vectors greater than two I put in the following function
+
+vectors_greater_than_2 <- rooms[rooms > 2 & !is.na(rooms)]
+vectors_greater_than_2
+vectors_greater_than_2
+[1] 5 3 3 3 8 3 4 3 7 4 3 7 3
+
+
+
+#Question 2
+
+class(rooms)
+
+#When you type in this function you get
+class(rooms)
+[1] "numeric"
+
+
+
+
+#Question 3
+
+#At first when you type in median(rooms) it will tell you
+median(rooms)
+[1] NA
+
+#To remove NA I put in the following function
+
+median_rooms_without_NA <- median(rooms, na.rm = TRUE)
+
+#It then becomes 2
+
+median_rooms_without_NA
+[1] 2
+
+
